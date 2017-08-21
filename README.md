@@ -40,7 +40,7 @@
     - Always Test everything.
 
 ## Contributors
-    - Sebastian Gonzales.
+    - Sebastian Gonzalez.
     - Cespedes Maximiliano.
 ## LICENSE
 
