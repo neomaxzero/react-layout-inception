@@ -5,6 +5,7 @@ import commonjs from 'rollup-plugin-commonjs';
 
 export default {
   name: 'reactLayoutInception',
+  external: ['react', 'prop-types'],
   input: 'src/index.js',
   output: {
     file: 'lib/index.min.js',

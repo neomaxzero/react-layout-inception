@@ -1,2 +1,4 @@
-const MyFunction = e => e;
-export default MyFunction;
+import Inception from './Inception.jsx';
+
+export { Inception };
+export default Inception;
