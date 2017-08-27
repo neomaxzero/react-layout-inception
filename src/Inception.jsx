@@ -1,5 +1,5 @@
 import React from 'react';
 
-const Layout = () => <div>Layout</div>;
+const Inception = () => <div>Inception</div>;
 
-export default Layout;
+export default Inception;

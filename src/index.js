@@ -1,4 +1,4 @@
 import Inception from './Inception.jsx';
-
-export { Inception };
+import Dream from './Dream.jsx';
+export { Inception, Dream };
 export default Inception;
