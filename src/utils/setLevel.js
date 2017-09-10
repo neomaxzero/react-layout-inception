@@ -1,7 +1,7 @@
 import React from 'react';
 import uuid from 'uuid/v4';
 
-const setupChildren = (children, level, diveInFn, parentId) => {
+const setupChildren = (children, level, parentId) => {
   return React.Children.map(children, (c, ix) => {
     // if (c.props && c.props.children)
     //   setupChildren(c.props.children, level, diveInFn);
@@ -9,24 +9,24 @@ const setupChildren = (children, level, diveInFn, parentId) => {
     // console.log('diveInFn', diveInFn);
     if (c.type && c.type.name === 'Dream') {
       // console.log(c.props.id);
-      console.log('LOS FUCKINGS IDS', c.props.id);
-      const id = c.props.id || uuid();
-      return React.createElement(
-        c.type,
-        Object.assign(
-          {},
-          {
-            ...c.props,
-            level,
-            id,
-            key: id,
-            parentId,
-            diveIn: () => diveInFn(id),
-            diveInFn
-          }
-        )
+      // console.log('LOS FUCKINGS IDS', c.props.id);
+      // const id = c.props.id || uuid();
+      return React.cloneElement(
+        c,
+        {
+          ...c.props,
+          // level,
+          // id,
+          // key: id,
+          parentId
+          // diveIn: () => diveInFn(id),
+          // diveInFn
+        },
+        ...c.props.children
       );
-    } else return c;
+    } else if (level[level.length - 1] === parentId) {
+      return c;
+    } else return null;
   });
 };
 
