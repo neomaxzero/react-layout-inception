@@ -3,16 +3,18 @@ import Inception, { Dream } from '../../../src';
 
 const Basic = () => (
   <Inception>
-    <p>qwioejqwejoi</p>
     <Dream>
-      <Dream id={'18902309asd098'} limbo>
-        {'A'}
+      <p>0000000</p>
+      <Dream>
+        <p>1111111</p>
       </Dream>
+      {/* <Dream>
+        <p>222222</p>
+      </Dream> */}
     </Dream>
-    <Dream>
-      <Dream limbo> A </Dream>
-    </Dream>
-    <p>qwioejqwejoi</p>
+    {/* <Dream>
+      <p>33333</p>
+    </Dream> */}
   </Inception>
 );
 

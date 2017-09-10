@@ -38,5 +38,8 @@
     "rollup-plugin-eslint": "^4.0.0",
     "rollup-plugin-node-resolve": "^3.0.0",
     "styled-components": "^2.1.2"
+  },
+  "dependencies": {
+    "node-uuid": "^1.4.8"
   }
 }
